@@ -1104,3 +1104,14 @@ section {
 #footer .credits a {
   color: #C66AAB;
 }
+
+/* Carrito */
+body {
+  margin: 30px;
+  margin-top: 100px;
+}
+#cart {
+  border: 1px solid #C66AAB;
+  padding: 10px;
+  background-color: #B2D3E2;
+}

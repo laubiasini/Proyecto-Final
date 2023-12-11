@@ -34,6 +34,46 @@ function closeInicio() {
   "use strict";
 })
 
+/**
+ * CARRITO
+ */
+ // Array para almacenar los productos en el carrito
+ let carrito = [];
+
+ // Función para agregar productos al carrito
+ function agregarAlCarrito(nombre, precio) {
+     carrito.push({ nombre, precio });
+     actualizarCarrito();
+     window.scrollTo(0, 0);
+ }
+
+ // Función para actualizar el contenido del carrito
+ function actualizarCarrito() {
+     const carritoLista = document.getElementById("carrito-lista");
+     const totalElemento = document.getElementById("total");
+
+     // Limpiar la lista actual
+     carritoLista.innerHTML = "";
+
+     // Calcular el total
+     let total = 0;
+
+     // Recorrer el carrito y actualizar la lista y el total
+     carrito.forEach(producto => {
+         const listItem = document.createElement("li");
+         listItem.textContent = `${producto.nombre}: $${producto.precio.toFixed(2)}`;
+         carritoLista.appendChild(listItem);
+
+         total += producto.precio;
+     });
+
+     // Actualizar el total en el HTML
+     totalElemento.textContent = total.toFixed(2);
+ }
+  function comprar() {
+    alert("Redirigiéndote a WhatsApp para continuar con tu compra");
+  }
+
 
   /**
    * Easy selector helper function
