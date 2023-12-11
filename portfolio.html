@@ -64,15 +64,20 @@
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
+        <!-- Carrito de compras -->
+      <div id="card">
+        <h2>Carrito</h2>
+        <ul id="carrito-lista"></ul>
+        <p><b>Total: $<span id="total">0.00</span></b></p>
+        <button onclick="comprar()"><a href="https://web.whatsapp.com/" target="_blank">Comprar</a></button>
+      </div>
 
         <div class="section-title">
           <h2>Productos</h2>
         </div>
-
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
@@ -94,7 +99,7 @@
                   <h4 class="card-text">$1500</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Cadenita AQ con dije Rompecabezas', 1500)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
@@ -107,7 +112,7 @@
                   <h4 class="card-text">$1400</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Cadenita de AD con dije Bailarina', 1400)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
@@ -120,7 +125,7 @@
                   <h4 class="card-text">$1700</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Cadenita de AQ de Corazones', 1700)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
@@ -133,7 +138,7 @@
                   <h4 class="card-text">$1500</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Cadenita de AB con dije Bolita', 1500)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
@@ -146,7 +151,7 @@
                   <h4 class="card-text">$1000</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Pulsera de AD de Bolitas', 1000)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
@@ -159,7 +164,7 @@
                   <h4 class="card-text">$1900</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Cadenita de AQ con dije de Alas', 1900)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
@@ -172,7 +177,7 @@
                   <h4 class="card-text">$2100</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Cadenita de AB con dije Estrella', 2100)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
@@ -185,7 +190,7 @@
                   <h4 class="card-text">$1400</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Cadenita de AB con dije Gatito', 1400)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
@@ -198,7 +203,7 @@
                   <h4 class="card-text">$1500</h4>
                 </div>
                 <div class="card-footer">
-                  <button type="button">Agregar al Carrito</button>
+                  <button onclick="agregarAlCarrito('Cadenita de AD con dije Buho', 1500)">Agregar al Carrito</button>
                 </div>
               </div>
             </div>
